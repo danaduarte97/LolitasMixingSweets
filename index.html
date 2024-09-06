@@ -2,41 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>LolitasMixingSweets</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>LolitasMixingSweets</title>
 </head>
 
 <body>
-    <header>
-        <p class="d-inline-flex gap-1">
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
-            </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <img src="./img/images.png" alt="">
-            </div>
+  <header>
+    <div class="franja">
+      <p>PEDIDOS ÚNICAMENTE POR WHATSAPP</p>
+    </div>
+    <nav>
+      <a class="navbar-brand logo" href="#">
+        <img src="./img/logo-transparente.png" alt="LolitasMixingSweets" />
+      </a>
+      <ul class="nav justify-content-center nav-underline">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Pasteleria Artesanal
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a class="dropdown-item" href="#" data-title="Torta Bob Esponja"
+                data-image="./img/Pasteleria Artesanal/pasteleriaartesanal-bobesponja.jpg" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Cumpleaños</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-title="Torta Bautismo"
+                data-image="./img/Pasteleria Artesanal/pasteleriaartesanal-cars.jpg" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Bautismo</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-title="Torta Pascuas"
+                data-image="./img/Pasteleria Artesanal/pascuas.jpg" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Pascuas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mesa Dulce</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Desayunos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Decoraciones</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid">
+          </div>
         </div>
-    </header>
-    <main>
+      </div>
+    </div>
 
-    </main>
-    <footer>
+  </header>
+  <main></main>
+  <footer></footer>
 
-    </footer>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
