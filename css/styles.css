@@ -53,7 +53,63 @@ header .modal .modal-dialog .modal-body img {
   object-fit: cover;
   /* Opcional: ajusta el recorte de la imagen si es necesario */
 }
-header .carousel-tortas-contenedor {
+
+main h2 {
+  text-align: center;
+  color: #a52a2a;
+  font-size: 30px;
+  font-family: "Josefin Slab", serif;
+}
+main .inicio-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.3fr 0.4fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 20px 0px;
+  grid-template-areas: "text-section . image-section";
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+main .inicio-container .text-section {
+  grid-area: text-section;
+  background-color: #fff0f0;
+  padding: 70px;
+  border-radius: 10px;
+}
+main .inicio-container .text-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+main .inicio-container .text-section p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+main .inicio-container .text-section .btn {
+  background-color: #a52a2a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+main .inicio-container .image-section {
+  grid-area: image-section;
+  position: relative;
+  width: 100%;
+}
+main .inicio-container .image-section img {
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 5px;
+  left: 100px;
+  width: 80%;
+  object-fit: cover;
+  z-index: 10;
+}
+main .carousel-tortas-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -61,16 +117,16 @@ header .carousel-tortas-contenedor {
   grid-auto-flow: row;
   grid-template-areas: "carousel1 carousel2";
 }
-header .carousel-tortas-contenedor .carousel1 {
+main .carousel-tortas-contenedor .carousel1 {
   grid-area: carousel1;
 }
-header .carousel-tortas-contenedor .carousel2 {
+main .carousel-tortas-contenedor .carousel2 {
   grid-area: carousel2;
 }
-header .carousel-tortas-contenedor .carousel-inner {
+main .carousel-tortas-contenedor .carousel-inner {
   height: 300px;
 }
-header .carousel-tortas-contenedor .carousel-inner .carousel-item img {
+main .carousel-tortas-contenedor .carousel-inner .carousel-item img {
   height: 100%;
   object-fit: cover;
 }

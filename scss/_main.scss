@@ -1,0 +1,102 @@
+main {
+    h2 {
+        text-align: center;
+        color: #a52a2a;
+        font-size: 30px;
+        font-family: 'Josefin Slab', serif;
+
+    }
+
+    .inicio-container {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1.3fr 0.4fr 1.3fr;
+        grid-template-rows: 1fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "text-section . image-section";
+
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+
+        .text-section {
+            grid-area: text-section;
+            background-color: #fff0f0;
+            padding: 70px;
+            border-radius: 10px;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+
+            .btn {
+
+                background-color: #a52a2a;
+
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+
+            }
+
+        }
+
+        .image-section {
+            grid-area: image-section;
+            position: relative;
+            width: 100%;
+
+            img {
+                border-radius: 10px;
+                position: absolute;
+                margin-top: 5px;
+                left: 100px;
+                width: 80%;
+                object-fit: cover;
+                z-index: 10;
+            }
+        }
+
+    }
+
+    .carousel-tortas-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 6px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "carousel1 carousel2";
+
+
+        .carousel1 {
+            grid-area: carousel1;
+        }
+
+        .carousel2 {
+            grid-area: carousel2;
+        }
+
+        .carousel-inner {
+            height: 300px;
+
+            .carousel-item {
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
